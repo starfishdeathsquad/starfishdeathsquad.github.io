@@ -9,23 +9,40 @@
 </head>
 <body>
     <!-- Signature -->
-    <img class="signature" src="assets/logo.png">
+    <div id="logo">
+        <img src="assets/logo-gray.png">
+    </div>
+
+    <div id="bio">
+        <p>starfish deathsquad is a mysterious and ultra-powerful music producer located in the northeastern forests of massachusetts. harnessing a vast range of natural and digital sounds at high tempo, he combines influences from old-school electronic subgenres like drum-n-bass and chiptune with rock guitars, trap hi-hats, and loud 808s. The kingly archduke of science and power welcomes you to his webpage; his work and contact information can be found by following the links below.</p>
+    </div>
 
     <!-- Links -->
-    <div class="links">
-        <a href="https://www.beatstars.com/starfish_deathsquad" class="links-items-odd">BeatStars</a>
-        <a href="https://open.spotify.com/artist/3QnXbLgy0nmHiJzSkQCM6I?si=8JtT1Hr9TtutBHldjxL1qg&nd=1" class="links-items-even">Spotify</a>
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_krMYUsdgbc0_CPEAKPTOJnBYMEvUSx438" class="links-items-odd">YouTube Music</a>
-        <a href="https://music.apple.com/us/artist/starfish-deathsquad/1584500713" class="links-items-even">Apple Music</a>
-        <!-- <a href="https://soundcloud.com/ecm-624002976" class="links-items-odd">SoundCloud</a> -->
-        <a href="https://www.instagram.com/starfish.deathsquad/" class="links-items-odd">Instagram</a>
+    <div class="links-row">
+        <div class="buttons">
+            <a href="https://open.spotify.com/artist/3QnXbLgy0nmHiJzSkQCM6I?si=8JtT1Hr9TtutBHldjxL1qg&nd=1" class="links-items-even"><img src="assets/icons/spotify.png"></a>
+        </div>
+        <div class="buttons">
+            <a href="https://music.apple.com/us/artist/starfish-deathsquad/1584500713"><img src="assets/icons/applemusic.png" class="links-items-even"/></a>
+        </div>
 
     </div>
-
-    <div class="bottom-text">
-        For business inquiries, please contact<br><a class="email" href="mailto:starfishdeathsquad@gmail.com">starfishdeathsquad@gmail.com</a>
+    <div class="links-row">
+        <div class="buttons">
+            <a href="https://music.youtube.com/playlist?list=OLAK5uy_krMYUsdgbc0_CPEAKPTOJnBYMEvUSx438" class="links-items-odd"><img src="assets/icons/youtubemusic.png"</a>
+        </div>
+        <div class="buttons">
+            <a href="https://www.beatstars.com/starfish_deathsquad" class="links-items-odd"><img src="assets/icons/beatstars.jpg"></a>
+        </div>
     </div>
-
+    <div class="links-row">
+        <div class="buttons">
+            <a href="https://www.instagram.com/starfish.deathsquad/" class="links-items-odd"><img src="assets/icons/instagram.jpg"></a>
+        </div>
+        <div class="buttons">
+            <a href="mailto:starfishdeathsquad@gmail.com"><img src="assets/icons/email.png"></a>
+        </div>
+    </div>
     <div class="sitesbysamchambers">
         <a class="samchambers" href="https://github.com/SamChambers">sitesbysam</a>
     </div>
@@ -38,121 +55,63 @@
         /* background: rgb(0, 0, 0); */
         background: url("assets/background.png");
         color: rgb(0, 0, 0);
-        font-family: 'f1';
         font-size: 15px;
         letter-spacing: 2px;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #logo {
-        /* border-radius: 50%; */
-        border: 1px solid rgba(24, 45, 161, 0.938);
-        display: block;
+        
         margin-left: auto;
         margin-right: auto;
-        margin-top: 15%;
-        height: auto;
-        width: 175px;
+        max-width: 75%;
+        max-height: auto;
+    } #logo img {
+        max-width: 100%;
     }
 
-    .signature {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-        height: auto;
-        width: 300px;
+    #bio {
+        text-align: justify;
+        font-size: 100%;
+        font-size-adjust: none;
+        background-color: white;
+        border: 5px solid black;
+        margin-bottom: 20px;
+        padding: 5px;
     }
 
-    .links {
+    .links-row {
         padding-bottom: 25px;
-    } .links-headers {
-        font-family: 'Headers';
-        font-weight: lighter;
-        color: rgb(0, 0, 0);
-        font-size: 50px;
-        text-align: center;
-    } .links-items-odd {
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+    } .buttons {
         display: block;
-        text-align: center;
-        font-size: 30px;
-        margin-top: 18px;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px;
-        border: 10px  rgb(192, 192, 192);
-        border-radius: 40px;
-        /* border-image: url(assets/background-links.jpg) 30% round; */
-        width: 300px;
-        color: rgb(0, 0, 0);
+        max-width: 30%;
+        max-height: 30%;
+        border: 5px solid rgb(0, 0, 0);
         text-decoration: none;
         /* background: url(assets/background-links.jpg); */
         background-color: rgb(255, 255, 255);
-    } .links-items-even {
-        display: block;
-        text-align: center;
-        font-size: 30px;
-        margin-top: 18px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
-        width: 300px;
-        border-radius: 40px;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        /* background: url(assets/background-links.jpg); */
-        /* background: linear-gradient(90deg, rgba(101,206,59,0.75) 0%, rgba(41,113,13,1) 50%, rgba(101,206,59,0.75) 100%);   */
-        background-color: rgb(255, 255, 255);
-    } .links-items-icon {
-        max-width: 25%;
-        max-height: 25%;
-    } .links-items-odd:hover, .links-items-even:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgba(255, 255, 255, 0.651);
+    } .buttons img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
-    .socials {
-        text-align: center;
-        font-size: 20px;
-        margin-top: 18px;
-        padding: 20px;
-        border: 1px solid rgb(255, 255, 255);
-        border-width: 4px;
-        width: 290px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 40px;
-        color: rgb(39, 38, 38);
-        transition: color 250ms; 
-        text-decoration: none;
-        background-color: rgba(255, 255, 255, 0.68);
-    }   .socials:hover {
-        color: #000;
-        background: rgba(255, 255, 255, 0.623);
-    }
-
-    .bottom-text {
-        font-size: 9px;
-        line-height: 2;
-        text-align: center;
-        padding-bottom: 20px;
-        margin-top: 20px;
-        color: rgb(255, 255, 255);
-        font-family: 'Email';
-    } .email {
-        font-size: 16px;
-        line-height: 2;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-family: 'Email';
-    }
+    
 
     .sitesbysamchambers {
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
+        padding-top: 10px;
         padding-bottom: 15px;
     }   .samchambers {
-        color: rgba(255, 255, 255, 0.247);
+        color: rgba(255, 255, 255, 0.74);
         text-decoration: underline;
     }
 </style>
