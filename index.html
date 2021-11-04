@@ -20,27 +20,27 @@
     <!-- Links -->
     <div class="links-row">
         <div class="buttons">
-            <a href="https://open.spotify.com/artist/3QnXbLgy0nmHiJzSkQCM6I?si=8JtT1Hr9TtutBHldjxL1qg&nd=1" class="links-items-even"><img src="assets/icons/spotify.png"></a>
+            <a href="https://open.spotify.com/artist/3QnXbLgy0nmHiJzSkQCM6I?si=8JtT1Hr9TtutBHldjxL1qg&nd=1" class="links-items-even"><img id="spotify" src="assets/icons/spotify.png"></a>
         </div>
         <div class="buttons">
-            <a href="https://music.apple.com/us/artist/starfish-deathsquad/1584500713"><img src="assets/icons/applemusic.png" class="links-items-even"/></a>
+            <a href="https://music.apple.com/us/artist/starfish-deathsquad/1584500713"><img id="apple" src="assets/icons/applemusic.png" class="links-items-even"/></a>
         </div>
 
     </div>
     <div class="links-row">
         <div class="buttons">
-            <a href="https://music.youtube.com/playlist?list=OLAK5uy_krMYUsdgbc0_CPEAKPTOJnBYMEvUSx438" class="links-items-odd"><img src="assets/icons/youtubemusic.png"</a>
+            <a href="https://music.youtube.com/playlist?list=OLAK5uy_krMYUsdgbc0_CPEAKPTOJnBYMEvUSx438" class="links-items-odd"><img id="youtube" src="assets/icons/youtubemusic.png"</a>
         </div>
         <div class="buttons">
-            <a href="https://www.beatstars.com/starfish_deathsquad" class="links-items-odd"><img src="assets/icons/beatstars.png"></a>
+            <a href="https://www.beatstars.com/starfish_deathsquad" class="links-items-odd"><img id="beatstars" src="assets/icons/beatstars.png"></a>
         </div>
     </div>
     <div class="links-row">
         <div class="buttons">
-            <a href="https://www.instagram.com/starfish.deathsquad/" class="links-items-odd"><img src="assets/icons/instagram.png"></a>
+            <a href="https://www.instagram.com/starfish.deathsquad/" class="links-items-odd"><img id="instagram" src="assets/icons/instagram.png"></a>
         </div>
         <div class="buttons">
-            <a href="mailto:starfishdeathsquad@gmail.com"><img src="assets/icons/email.png"></a>
+            <a href="mailto:starfishdeathsquad@gmail.com"><img id="email" src="assets/icons/email.png"></a>
         </div>
     </div>
     <div class="sitesbysamchambers">
@@ -80,6 +80,10 @@
         border: 5px solid black;
         margin-bottom: 20px;
         padding: 5px;
+    } #bio:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
     }
 
     .links-row {
@@ -101,8 +105,28 @@
         max-width: 100%;
         max-height: 100%;
     } .buttons:hover {
-        background-color: rgba(255, 255, 255, 0.5);
+        /* background-color: rgba(255, 255, 255, 0.5); */
     }
+    #spotify:hover {
+        background-color: rgb(21, 233, 14);
+    }
+    #apple:hover {
+        background-color: rgb(59, 119, 247);
+    }
+    #youtube:hover {
+        background-color: rgb(255, 0, 0);
+    }
+    #beatstars:hover {
+        background-color: rgb(255, 0, 0);
+    }
+    #instagram:hover {
+        background-color: rgb(233, 93, 226);
+    }
+    #email:hover {
+        background-color: rgb(255, 115, 0);
+    }
+
+    
 
     .sitesbysamchambers {
         margin-left: auto;
